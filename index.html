@@ -2,8 +2,8 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="/css/culturama-favico.png">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,24 +26,25 @@
 
           <legend>Dados Pessoais</legend>
           <label for="name">Nome:</label>
-          <input id="name" type="text" name="userName" required />
-          <br />
+          <input id="name" type="text" name="userName" required>
+          <br>
           <label for="age">Idade:</label>
-          <input id="age" type="number" name="userAge" min="12" max="100" required />
-          <br />
+          <input id="age" type="number" name="userAge" min="12" max="100" required>
+          <br>
           <label for="birthDate">Data de nascimento:</label>
-          <input id="birthDate" type="date" name="userBirthDate" />
-          <br />
+          <input id="birthDate" type="date" name="userBirthDate">
+          <br>
           <label for="email">Email:</label>
-          <input id="email" type="email" name="userEmail" required />
-          <br />
+          <input id="email" type="email" name="userEmail" required>
+          <br>
           <label for="phoneNumber">Telefone:</label>
           <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
-            placeholder="DDD + números sem espaços ou hifen">
+            placeholder="DDD + números sem espaços ou hifen" aria-describedby="phoneHelp">
+          <small id="phoneHelp">Preencha com 11 digitos no formato: DDD + número sem espaços ou hífen.</small>
           <br>
           <label for="image">Upload de foto:</label>
-          <input id="image" type="file" accept="image/*" name="userImage" />
-          <br />
+          <input id="image" type="file" accept="image/*" name="userImage">
+          <br>
         </fieldset>
 
         <fieldset>
@@ -51,13 +52,13 @@
 
           <legend>Perfil</legend>
           <p>Gênero:</p>
-          <input id="fem" type="radio" name="userGender" value="Feminino" required />
+          <input id="fem" type="radio" name="userGender" value="Feminino" required>
           <label for="fem">Feminino</label>
 
-          <input id="masc" type="radio" name="userGender" value="Masculino" required />
+          <input id="masc" type="radio" name="userGender" value="Masculino" required>
           <label for="masc">Masculino</label>
 
-          <input id="notInformed" type="radio" name="userGender" value="Prefiro não informar" required />
+          <input id="notInformed" type="radio" name="userGender" value="Prefiro não informar" required>
           <label for="notInformed">Prefiro não informar</label>
           <br>
           <label for="maritalStatus">Estado Civil:</label>
@@ -103,7 +104,7 @@
           <br>
 
           <label for="city">Cidade:</label>
-          <input type="text" id="city" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza" />
+          <input type="text" id="city" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza">
         </fieldset>
 
         <fieldset>
